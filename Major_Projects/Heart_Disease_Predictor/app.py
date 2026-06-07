@@ -55,11 +55,17 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Load model artifacts ──────────────────────────────────────────────────────
+from pathlib import Path
+import joblib
+
 @st.cache_resource
 def load_artifacts():
-    scaler = joblib.load("scaler.pkl")
-    model = joblib.load("KNN_heart.pkl")
-    columns = joblib.load("columns.pkl")
+    BASE_DIR = Path(__file__).parent
+
+    scaler = joblib.load(BASE_DIR / "scaler.pkl")
+    model = joblib.load(BASE_DIR / "KNN_heart.pkl")
+    columns = joblib.load(BASE_DIR / "columns.pkl")
+
     return scaler, model, columns
 
 try:
