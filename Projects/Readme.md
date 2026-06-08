@@ -20,11 +20,8 @@ A collection of Machine Learning projects built while progressing from fundament
 * Hyperparameter Tuning
 * Customer Segmentation using Clustering
 
-### Advanced
+### Advanced ( IN MAJOR PROJECTS FOLDER )
 
-* Neural Networks from Scratch (NumPy)
-* Deep Learning with PyTorch
-* Convolutional Neural Networks (CNNs)
 * Natural Language Processing (NLP)
 * Recommendation Systems
 * End-to-End ML Pipelines
