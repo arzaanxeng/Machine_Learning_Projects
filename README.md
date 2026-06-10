@@ -47,11 +47,3 @@ Build a strong foundation in ML concepts and progressively develop the skills ne
 - Monitoring and retraining strategies
 
 ---
-
-## Resources
-
-- Books: "Hands-On ML" by Aurelien Geron, "Deep Learning" by Goodfellow et al.
-- Courses: Coursera ML Specialization (Andrew Ng), Andrej Karpathy Youtube Playlist
-- Practice: Kaggle competitions, personal projects, open datasets
-
----
