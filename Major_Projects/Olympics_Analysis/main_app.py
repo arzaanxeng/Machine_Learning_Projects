@@ -5,10 +5,16 @@ import plotly.express as px
 import plotly.figure_factory as ff
 import preprocessor , helper
 import matplotlib.pyplot as plt
+from pathlib import Path
 
-df = pd.read_csv('Data/athlete_events.csv')
-region_df = pd.read_csv('Data/noc_regions.csv')
 
+BASE_DIR = Path(__file__).resolve().parent
+
+print("Current directory:", BASE_DIR)
+print("Files in Data:", list((BASE_DIR / "Data").glob("*")))
+
+df = pd.read_csv(BASE_DIR / "Data" / "athlete_events.csv")
+region_df = pd.read_csv(BASE_DIR / "Data" / "noc_regions.csv")
 
 df = preprocessor.preprocess(df , region_df)
 
