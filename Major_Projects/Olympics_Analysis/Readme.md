@@ -9,6 +9,12 @@ An interactive data analysis and visualization dashboard built with **Python**, 
 </p>
 
 ---
+##  Live Demo
+A fully interactive version of the project is deployed below:
+👉 **[Launch Application](https://machinelearningprojects-exspmrqjrpzfclodq9hkeo.streamlit.app/)**
+> Feel free to explore the dashboard and interact with the model in real time.
+---
+
 ##  Overview
 
 This project explores historical Olympic data from 1896 to 2016, providing insights into athlete performance, country-wise medal tallies, participation trends, and sport-specific statistics through an interactive web application.
