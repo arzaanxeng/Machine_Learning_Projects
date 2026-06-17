@@ -1,5 +1,6 @@
--Streamlit
--Numpy
--Pandas
--Plotly
--Matplotlib
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+plotly
