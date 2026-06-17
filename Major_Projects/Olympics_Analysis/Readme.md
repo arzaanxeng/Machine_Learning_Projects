@@ -1,7 +1,14 @@
 #  Olympics Analysis Dashboard
 
 An interactive data analysis and visualization dashboard built with **Python**, **Streamlit**, **Pandas**, **Plotly**, and **Seaborn** using 120 years of Olympic Games data.
+---
+## Dashboard Preview
 
+<p align="center">
+  <img src="View/image2.jpeg" alt="Dashboard Preview" width="700"/>
+</p>
+
+---
 ##  Overview
 
 This project explores historical Olympic data from 1896 to 2016, providing insights into athlete performance, country-wise medal tallies, participation trends, and sport-specific statistics through an interactive web application.
