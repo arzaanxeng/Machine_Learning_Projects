@@ -4,7 +4,18 @@ A Streamlit dashboard that predicts laptop prices from specs (brand, RAM, CPU/GP
 
 >Link for the Deployed Project : https://machinelearningprojects-laptoppricepredictor786.streamlit.app/
 
+
+
 ## Features
+
+**Comapred Different Models along with Hyperparameter Tuning for each of them**
+
+| Model              | R² Score |
+|--------------------|----------|
+| Linear Regression  | ~0.75    |
+| KNN                | ~0.80    |
+| XGBoost            | ~0.84    |
+| Random Forest      | 0.871    | 
 
 **Predict tab**
 - Configure a laptop (brand, type, RAM, weight, CPU, GPU, OS, HDD, SSD, screen size, resolution, touchscreen, IPS) and get an instant price estimate with a ±10% likely range.
