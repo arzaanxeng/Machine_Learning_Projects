@@ -8,7 +8,7 @@ A Streamlit dashboard that predicts laptop prices from specs (brand, RAM, CPU/GP
 
 ## Features
 
-**Comapred Different Models along with Hyperparameter Tuning for each of them**
+**Compared Different Models along with Hyperparameter Tuning for each of them**
 
 | Model              | R² Score |
 |--------------------|----------|
