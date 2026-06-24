@@ -134,13 +134,22 @@ def load_pipeline():
     with open("pipe.pkl", "rb") as f:
         return pickle.load(f)
 
-@st.cache_data
-def load_data():
-    with open("data.pkl", "rb") as f:
-        return pickle.load(f)
+import os
+import pickle
+import streamlit as st
 
-pipe = load_pipeline()
-df = load_data()
+@st.cache_resource
+def load_pipeline():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(current_dir, "pipe.pkl")
+
+    st.write("Current directory:", current_dir)
+    st.write("Files:", os.listdir(current_dir))
+
+    with open(model_path, "rb") as f:
+        pipe = pickle.load(f)
+
+    return pipe
 
 RESOLUTIONS = [
     "1920x1080", "1366x768", "1600x900", "3840x2160",
