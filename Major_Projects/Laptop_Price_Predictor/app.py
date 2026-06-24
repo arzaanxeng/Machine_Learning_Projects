@@ -136,16 +136,27 @@ import streamlit as st
 @st.cache_resource
 def load_pipeline():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(current_dir, "pipe.pkl")
+    pipe_path = os.path.join(current_dir, "pipe.pkl")
 
-    st.write("Current directory:", current_dir)
-    st.write("Files:", os.listdir(current_dir))
-
-    with open(model_path, "rb") as f:
+    with open(pipe_path, "rb") as f:
         pipe = pickle.load(f)
 
     return pipe
 
+
+@st.cache_data
+def load_data():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    data_path = os.path.join(current_dir, "data.pkl")
+
+    with open(data_path, "rb") as f:
+        df = pickle.load(f)
+
+    return df
+
+
+pipe = load_pipeline()
+df = load_data()
 RESOLUTIONS = [
     "1920x1080", "1366x768", "1600x900", "3840x2160",
     "3200x1800", "2880x1800", "2560x1600", "2560x1440", "2304x1440",
