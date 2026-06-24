@@ -129,11 +129,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-@st.cache_resource
-def load_pipeline():
-    with open("pipe.pkl", "rb") as f:
-        return pickle.load(f)
-
 import os
 import pickle
 import streamlit as st
