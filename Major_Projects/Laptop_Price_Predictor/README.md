@@ -2,9 +2,13 @@
 
 A Streamlit dashboard that predicts laptop prices from specs (brand, RAM, CPU/GPU, storage, display) using a Random Forest regression pipeline, alongside market-insight charts built from the underlying dataset.
 
+---
+## Dashboard Preview
+<p align="center">
+  <img src="View/Dashboard_Preview.png" alt="Dashboard Preview" width="700"/>
+</p>
+
 >Link for the Deployed Project : https://machinelearningprojects-laptoppricepredictor786.streamlit.app/
-
-
 
 ## Features
 
