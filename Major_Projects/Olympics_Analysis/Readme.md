@@ -11,7 +11,7 @@ An interactive data analysis and visualization dashboard built with **Python**, 
 ---
 ##  Live Demo
 A fully interactive version of the project is deployed below:
-👉 **[Launch Application](https://machinelearningprojects-exspmrqjrpzfclodq9hkeo.streamlit.app/)**
+👉 **[Launch Application](https://machinelearningprojects-olympics-dashboard.streamlit.app/)**
 > Feel free to explore the dashboard and interact with the model in real time.
 ---
 
