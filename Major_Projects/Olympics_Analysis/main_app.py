@@ -8,15 +8,26 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 
-BASE_DIR = Path(__file__).resolve().parent
+# Import your modules
+import preprocessor
+import helper
 
-print("Current directory:", BASE_DIR)
-print("Files in Data:", list((BASE_DIR / "Data").glob("*")))
+# --------------------- Data Loading ---------------------
+@st.cache_data
+def load_data():
+    BASE_DIR = Path(__file__).resolve().parent
+    data_dir = BASE_DIR / "Data"
+    
+    try:
+        df = pd.read_csv(data_dir / "athlete_events.csv")
+        region_df = pd.read_csv(data_dir / "noc_regions.csv")
+        df = preprocessor.preprocess(df, region_df)
+        return df
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
+        st.stop()
 
-df = pd.read_csv(BASE_DIR / "Data" / "athlete_events.csv")
-region_df = pd.read_csv(BASE_DIR / "Data" / "noc_regions.csv")
-
-df = preprocessor.preprocess(df , region_df)
+df = load_data()
 
 st.markdown("""
     <div style="
